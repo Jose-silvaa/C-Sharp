@@ -1,20 +1,12 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿var names = new string[] { "Alice", "Bob", "Charlie" };
 
-string firstFriend = "Maria";
+names = [..names, "David", "Andre"];// Using the spread operator to add elements
 
-firstFriend = firstFriend.Trim();
-string secondFriend = "Jose";
+foreach (var name in names)
+{
+    Console.WriteLine(name);
 
-string friends = $"My friends are {firstFriend} and {secondFriend}";
+}
 
-Console.WriteLine(friends);
-Console.WriteLine(friends.Replace("Maria", "Ana"));
-Console.WriteLine(friends.Contains("Maria"));
+Console.WriteLine(names[^1]);//Last element
 
-Console.WriteLine(friends.Length);
-
-int a = 18;
-int b = 6;
-int c = a + b;
-Console.WriteLine(c);

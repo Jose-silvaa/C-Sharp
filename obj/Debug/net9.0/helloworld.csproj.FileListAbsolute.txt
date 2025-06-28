@@ -12,3 +12,4 @@ C:\Users\jvito\development\jose\projects\helloworld\obj\Debug\net9.0\refint\hell
 C:\Users\jvito\development\jose\projects\helloworld\obj\Debug\net9.0\helloworld.pdb
 C:\Users\jvito\development\jose\projects\helloworld\obj\Debug\net9.0\helloworld.genruntimeconfig.cache
 C:\Users\jvito\development\jose\projects\helloworld\obj\Debug\net9.0\ref\helloworld.dll
+C:\Users\jvito\Development\jose\Projects\helloworld\obj\Debug\net9.0\helloworld.sourcelink.json
