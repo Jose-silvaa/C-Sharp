@@ -1,44 +1,16 @@
-﻿//Sorting e Searching in C#
+﻿Console.WriteLine("Hello, opp!");
 
+var p1 = new Person("John", "Doe", new DateOnly(1990, 1, 1));
 
-// var numbers = new List<int> { 20, 1, 15, 66, 77};
+List<Person> people = [p1];
 
-//names = [..names, "David", "Andre"];// Using the spread operator to add elements
+Console.WriteLine($"First person: {p1.First} {p1.Last}, born on {p1.Birthday}");
 
-// Console.WriteLine($"I found 15 at index {numbers.IndexOf(15)}"); // Get the index of the number 15
-// numbers.Sort(); // Sort the list in ascending order
-// Console.WriteLine($"I found 15 at index {numbers.IndexOf(15)}"); // Get the index of the number 15
-
-
-// foreach (var number in numbers)
-// {
-//     Console.WriteLine(number);
-
-// }
-
-//Console.WriteLine(names[^1]);//Last element
-
-
-//LINQ
-
-
-// Specify the data source.
-List<int> scores = [97, 92, 81, 60];
-
-//Define the query expression.
-IEnumerable<int> scoreQuery =
-    from score in scores
-    where score > 80
-    select score;
-
-
-var scoreQuery2 = scores.Where(s => s > 80)
-    .OrderByDescending(s => s);
-
-List<int> myScores = scoreQuery.ToList();
-
-foreach (int score in myScores)
+public class Person(string firstName, string lastName, DateOnly birthDate)
 {
-    Console.WriteLine(score);
-}
+    public string First { get; } = firstName;
+    public string Last { get; } = lastName;
+    public DateOnly Birthday { get; } = birthDate;
 
+
+};
